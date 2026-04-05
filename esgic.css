@@ -1,0 +1,236 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+    /* scrool */
+
+::-webkit-scrollbar{
+    color: transparent;
+    width: 10px;
+}    
+::-webkit-scrollbar-thumb{
+    background-color: blue;
+}
+
+        /* menu */
+.logo{
+    width: 60px;
+    height: 60px;
+    border-radius: 40px;
+    animation-name: logold;
+    animation-duration: 4s ;
+    animation-iteration-count: infinite;
+}
+.logo_all{
+    display: flex; 
+    align-items:end;
+    padding: 0px 40px;
+ }
+.text_logo{color: red; font-weight: bold;}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 18px;
+    background-color: white;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
+}
+.navbar ul{
+    list-style-type: none;
+    display: flex;
+}
+ul li a{
+    text-decoration: none;
+    padding: 12px;
+    color: blue;
+    font-weight: bold;
+    transition: 0.9s;
+}
+ul li a:hover{
+    background-color: rgb(0, 68, 255);
+    color: red;
+    border-radius: 18px;
+}
+    
+        /* recherche */
+
+
+.recherche{
+    text-align: right;
+    padding-top: 50px;
+    margin-right: 10px;
+}
+.input_1{
+    border-radius: 20px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+    width: 8%;
+    height: 4%;
+    padding: 0px 4px;
+    background-color: red;
+    margin: 0px -12px;
+    border: solid 2px blue;
+}
+.input_2{
+    border-radius: 20px;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+    width: 18%;
+    height: 4%;
+    border: solid 2px blue;
+    border-right: blue;
+}
+
+
+            /* header */
+
+.logo_esgic{
+    width: 50%;
+    height: 30%;
+}
+.cont{ display: flex; justify-content: center; padding-top: 40px;}
+.text_center{text-align: center;}
+.text_important{
+    font-size: 20px;
+    background-color: rgb(255, 10, 10);
+    width: 49%;
+    height: 20%px;
+    margin: 0px auto;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.section_paragraphe{ 
+    padding-top: 10px; 
+    line-height: 25px;
+    background-color: rgb(248, 248, 168); 
+    padding-bottom: 30px;
+}
+.section_text{ 
+    font-size: 150%; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.text_gras{font-weight: bold;}
+
+             /* location */
+
+.header{
+    background: url(images/igd.jpg) no-repeat center center/cover;
+    /* height: 80.4vh; */
+    width: 100%;
+    height: 100%;
+}
+.location_texte, .header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.btn {
+    border-color: red;
+    padding: 15;
+    border-radius: 8px;
+    color: white;
+    background-color: red;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 50px;
+    transition: 0.8s;
+}
+.btn:hover {
+    border-color: blue;
+    border-radius: 4px;
+    color: red;
+    background-color: blue;
+    font-weight: bold;
+    border-radius: 8px;
+}
+a{
+    font-weight: bolder;
+    color: white;
+    text-decoration: none;
+    transition: 0.6s;
+}
+a:hover{
+    color: red;
+}
+
+        /* about */
+
+
+#header_3{
+    font-family: "";
+    font-size: 45px;
+    font-weight: bold;
+    color: red;
+    -webkit-text-fill-color: red;
+    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-width: 2px;
+}
+.container_about{
+    background-color: rgb(36, 36, 230);
+    padding-bottom: 80px;
+}
+.cta_about{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+        /* footer  */
+
+.content_footer{
+    background-color: red;
+    padding: 8px;
+}
+.footer_ig{
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+
+@keyframes logold{
+    0% { transform: rotate(0);}
+    50% { transform: scalex(1.5);}
+    100% { transform: rotatex(180deg);}
+}
+
+@media screen and (max-width: 475px) {
+    .navbar{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .recherche{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .cont{
+        width: 100%;
+    }
+    .section_paragraphe{
+        padding: 10px 16px;
+    }
+    .container_about{
+        padding: 0px 8px;
+        padding-bottom: 30px;
+    }
+}
+@media screen and (min-width: 475px){
+    .header{
+        width: 50%;
+        height: 50%;
+    }
+}
+
+@media screen and (max-width: 1400px){
+    .header{
+        width: 100%;
+        height: 200%;
+    }
+}
